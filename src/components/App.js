@@ -17,7 +17,7 @@ export class App extends React.Component {
             params: { country: "us", pageSize: "5", category: "technology" },
         });
         console.log(response);
-        this.setState({ news: response.data.artcles })
+        this.setState({ popnews: response.data.artcles })
     }
     
 
@@ -38,7 +38,7 @@ export class App extends React.Component {
          <MainNewsFeed articles={this.state.articles} />
         </div>
         <div className="seven wide column">
-           <PopularNews popnews={this.state.popnews} /> 
+         <PopularNews popnews={this.state.popnews} /> 
         </div> 
        </div>
       </div>

@@ -4,7 +4,7 @@ import React from 'react'
 
    const articles = props.articles.map((article) => {
      console.log(article)
-     return (<div className="ui container" key={article.source.id}>
+     return (<div className="ui container" key={article.title}>
        <div className="author">
          <img src={article.urlToImage} style={{ maxWidth:'200px' }} />
          <h2>{article.author}</h2>
