@@ -14,10 +14,10 @@ export class App extends React.Component {
 
    TopNews = async () => {
         const response = await hackernews.get("/top-headlines", {
-            params: { country: "us", pageSize: "5", category: "technology" },
+            params: { country: "us", pageSize: "6", category: "technology" },
         });
         console.log(response);
-        this.setState({ popnews: response.data.artcles })
+        this.setState({ popnews: response.data.articles })
     }
     
 

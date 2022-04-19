@@ -3,7 +3,7 @@ import React from 'react'
   const MainNewsFeed = (props) => {
 
    const articles = props.articles.map((article) => {
-     console.log(article)
+     //console.log(article)
      return (<div className="ui container" key={article.title}>
        <div className="author">
          <img src={article.urlToImage} style={{ maxWidth:'200px' }} />
@@ -25,7 +25,7 @@ import React from 'react'
     })
 
    return (
-     <div>{articles}</div>
+     <div> <h1>MainNewsFeed</h1> {articles}</div>
    )
 }
 
