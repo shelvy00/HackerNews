@@ -30,19 +30,19 @@ export class App extends React.Component {
 
   render() {
   return (
-    <div className="ui container" style={{ marginTop: '10PX' }}>
-      <SearchBar onSubmit={this.onSearchSubmit} />
-      <div className="ui grid">
-       <div className="row">
-        <div className="nine wide column">  
-         <MainNewsFeed articles={this.state.articles} />
-        </div>
-        <div className="seven wide column">
-         <PopularNews popnews={this.state.popnews} /> 
-        </div> 
-       </div>
-      </div>
-    </div>
+    <div className="container" style={{ marginTop: '10PX' }}>
+        <SearchBar onSubmit={this.onSearchSubmit} />
+        <div className="comtainer">
+         <div className="row">
+          <div className="col-12 col-lg-8">  
+           <MainNewsFeed articles={this.state.articles} />
+          </div> 
+          <div className="col-12 col-lg-4 ">
+           <PopularNews popnews={this.state.popnews} />
+          </div>
+         </div>
+        </div>  
+    </div>      
    )
   } 
 }

@@ -4,28 +4,26 @@ import React from 'react'
 
    const articles = props.articles.map((article) => {
      //console.log(article)
-     return (<div className="ui container" key={article.title}>
-       <div className="author">
-         <img src={article.urlToImage} style={{ maxWidth:'200px' }} />
-         <h2>{article.author}</h2>
-        </div>
-        <h4>{article.title}</h4>
-        <br />
-        <div className="pulished">
-          {article.content}
-        </div>
-        <div>
-         <p>{article.description}</p>
-         <p>{article.publishedAt}</p>
-         <a href={article.url}>Click Here for more</a>
-        </div>
-        <br />
-     </div>
+     return ( 
+          <div className="card" key={article.title} style={{ width:'30rem' }} >
+           <img src={article.urlToImage} className="card-img-top" alt="..." />
+          <div className="card-body">
+           <h2 className="author">{article.author}</h2>
+           <h5 className="card-title">{article.title}</h5>
+           <p className="card-text">{article.content}</p>
+           <p className="description">{article.description}</p>
+           <p className="publish">{article.publishedAt}</p>
+           <a href={article.url} className="btn btn-primary">Read More</a>
+          </div>
+         </div>
      );
     })
 
    return (
-     <div> <h1>MainNewsFeed</h1> {articles}</div>
+     <div>
+        <h1>MainNewsFeed</h1> 
+        {articles}
+     </div>
    )
 }
 
