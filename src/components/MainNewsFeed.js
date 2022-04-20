@@ -5,8 +5,8 @@ import React from 'react'
    const articles = props.articles.map((article) => {
      //console.log(article)
      return ( 
-          <div className="card" key={article.title} style={{ width:'30rem' }} >
-           <img src={article.urlToImage} className="card-img-top" alt="..." />
+          <div className="card" key={article.title} style={{ width:'30rem' }}  >
+           <img src={article.urlToImage} className="card-img-top" alt={article.source.name} />
           <div className="card-body">
            <h2 className="author">{article.author}</h2>
            <h5 className="card-title">{article.title}</h5>

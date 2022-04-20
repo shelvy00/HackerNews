@@ -30,21 +30,22 @@ export class App extends React.Component {
 
   render() {
   return (
-    <div className="container" style={{ marginTop: '10PX' }}>
-        <SearchBar onSubmit={this.onSearchSubmit} />
-        <div className="comtainer">
-         <div className="row">
-          <div className="col-12 col-lg-8">  
-           <MainNewsFeed articles={this.state.articles} />
-          </div> 
-          <div className="col-12 col-lg-4 ">
-           <PopularNews popnews={this.state.popnews} />
-          </div>
-         </div>
-        </div>  
-    </div>      
-   )
-  } 
+   <div className="container" style={{ marginTop: '10PX' }}>
+     <SearchBar onSubmit={this.onSearchSubmit} />
+    <div className="d-flex gap-2 flex-wrap justify-content-center">
+     <div className="row">
+      <div className="col-12 col-lg-8">  
+       <MainNewsFeed articles={this.state.articles} />
+      </div> 
+      <div className="col-12 col-lg-4 ">
+       <PopularNews popnews={this.state.popnews} />
+      </div>
+     </div>
+    </div>  
+   </div>      
+     );
+    
+    } 
 }
 
 export default App;

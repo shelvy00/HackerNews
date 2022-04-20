@@ -7,7 +7,7 @@ export const PopularNews = (props) => {
     console.log(popnew)
     return ( 
       <div className="card" key={popnew.title} style={{ width:'18rem' }} >
-      <img src={popnew.urlToImage} className="card-img-top" alt="..." />
+      <img src={popnew.urlToImage} className="card-img-top" alt={popnew.source.name} />
       <div className="card-body">
         <h2 className="author">{popnew.author}</h2>
         <h5 className="card-title">{popnew.title}</h5>
