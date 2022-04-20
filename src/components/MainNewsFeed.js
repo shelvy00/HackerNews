@@ -21,8 +21,10 @@ import React from 'react'
 
    return (
      <div>
-        <h1>MainNewsFeed</h1> 
-        {articles}
+        <h1>MainNewsFeed</h1>
+         <div className="d-flex gap-2 flex-wrap justify-content-center"> 
+            {articles}
+         </div>
      </div>
    )
 }

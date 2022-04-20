@@ -32,7 +32,7 @@ export class App extends React.Component {
   return (
    <div className="container" style={{ marginTop: '10PX' }}>
      <SearchBar onSubmit={this.onSearchSubmit} />
-    <div className="d-flex gap-2 flex-wrap justify-content-center">
+    <div>
      <div className="row">
       <div className="col-12 col-lg-8">  
        <MainNewsFeed articles={this.state.articles} />

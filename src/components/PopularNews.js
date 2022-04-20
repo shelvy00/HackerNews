@@ -21,9 +21,11 @@ export const PopularNews = (props) => {
    })
   
     return (
-      <div>
+      <div className="text-center">
         <h1>Top-Headlines</h1>
-        {renderlist}
+        <div className="d-flex gap-2 flex-wrap justify-content-center">
+         {renderlist}
+        </div> 
       </div>
     );  
 }
