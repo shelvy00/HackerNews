@@ -8,7 +8,7 @@ On page load, the application will display articles from the search term "backet
 
 ### Technologies Used
 
-React JS, News API, Semantic-UI
+React JS, News API, Semantic-UI, BootStrap
 
 ### Quick Start
 
